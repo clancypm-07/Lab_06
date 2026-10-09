@@ -1,0 +1,30 @@
+package Lab_06;
+
+import java.util.Scanner;
+
+public class Lab_06_04_MetricConverter {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+
+        double meters = 0;
+        String trash = "";
+
+        System.out.print("Enter your distance in meters: ");
+
+        if(in.hasNextDouble())
+        {
+            meters = in.nextDouble();
+            System.out.println("\nDistance in miles: " + (meters*0.000621371));
+            System.out.println("Distance in feet: " + (meters * 3.28084));
+            System.out.println("Distance in inches: "+ (meters * 39.3701));
+        }
+        else
+        {
+            trash = in.nextLine();
+            System.out.print("You entered an invalid value\nplease rerun the program.");
+        }
+        }
+
+    }
