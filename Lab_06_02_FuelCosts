@@ -1,0 +1,23 @@
+package Lab_06;
+
+import java.util.Scanner;
+
+public class Lab_06_02_FuelCosts {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        double volume = 0;
+        double fuelEfic = 0;
+        double costPerGal = 0;
+
+        System.out.print("Enter the number of gallons in tank: ");
+        volume = in.nextDouble();
+        System.out.print("\nEnter your fuel efficiency (mpg): ");
+        fuelEfic = in.nextDouble();
+        System.out.print("\nEnter the price per gallon: ");
+        costPerGal = in.nextDouble();
+
+        System.out.println("\nYour cost for fuel every 100 miles is: $" + (costPerGal/fuelEfic)*100);
+    }
+}
