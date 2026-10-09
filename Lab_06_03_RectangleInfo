@@ -31,7 +31,9 @@ public class Lab_06_03_RectangleInfo {
         if (in.hasNextDouble())
         {
             width = in.nextDouble();
-            System.out.print("The area of the rectangle is: " + (length * width));
+            System.out.println("The area of the rectangle is: " + (length * width));
+            System.out.println("The perimeter of the rectangle is: " + ((2*length) + (2*width)));
+            System.out.print("The diagonal of the rectangle is: " + Math.sqrt((length * length) + (width * width)));
         }
         else
         {
