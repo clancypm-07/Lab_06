@@ -18,6 +18,6 @@ public class Lab_06_02_FuelCosts {
         System.out.print("\nEnter the price per gallon: ");
         costPerGal = in.nextDouble();
 
-        System.out.println("\nYour cost for fuel every 100 miles is: $" + (costPerGal/fuelEfic)*100);
+        System.out.println("\nYour cost for fuel every 100 miles is: $" + "%10.2f", (costPerGal/fuelEfic)*100);
     }
 }
