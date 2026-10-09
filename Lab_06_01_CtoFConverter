@@ -1,0 +1,30 @@
+package Lab_06;
+
+import java.util.Scanner;
+
+public class Lab_06_01_CtoFConverter {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        double tempC = 0;
+        String trash = "";
+
+        System.out.print("Enter a temperature in Celsius: ");
+
+        if(in.hasNextDouble())
+        {
+            tempC = in.nextDouble();
+            double tempF = (tempC * 9 / 5) + 32;
+            System.out.println("The temperature you entered in Fahrenheit is: " + tempF);
+        }
+        else
+        {
+            trash = in.nextLine();
+            System.out.println("\nYou said your temperature was: " + trash);
+            System.out.println("Run the program again and enter a valid amount!");
+            System.exit(0);
+        }
+
+    }
+}
