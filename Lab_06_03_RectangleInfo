@@ -1,0 +1,42 @@
+package Lab_06;
+
+import java.util.Scanner;
+
+public class Lab_06_03_RectangleInfo {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        //Declarations
+        double length = 0;
+        double width = 0;
+        String trash = "";
+
+        //Length input
+        System.out.print("Enter the length of the rectangle: ");
+
+        if(in.hasNextDouble())
+        {
+            length = in.nextDouble();
+        }
+        else
+        {
+            trash = in.nextLine();
+            System.out.print("You entered an invalid value\nplease rerun the program.");
+        }
+
+        //Width input
+        System.out.print("Enter the width of the triangle: ");
+
+        if (in.hasNextDouble())
+        {
+            width = in.nextDouble();
+            System.out.print("The area of the rectangle is: " + (length * width));
+        }
+        else
+        {
+            trash = in.nextLine();
+            System.out.print("You entered an invalid value\nplease rerun the program.");
+        }
+    }
+}
